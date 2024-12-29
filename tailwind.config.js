@@ -9,7 +9,7 @@ export default {
       colors: {
         bgColor : '#181818',
         logoColor:'#FF8A00',
-      }
+      },
     },
   },
   plugins: [],

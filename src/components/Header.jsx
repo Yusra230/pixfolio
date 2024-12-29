@@ -1,13 +1,13 @@
 const Header = () => {
   return (
     <>
-      <header className="bg-white dark:bg-bgColor">
+      <header className="bg-white dark:bg-bgColor border-orange-600 border-b-2 border-opacity-10">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-1">
-          <div className="flex h-20 items-center justify-between">
+          <div className="flex h-28 items-center justify-between">
             <div className="md:flex md:items-center md:gap-12">
               <a className="flex items-center" href="#">
-                  <img src="star-1.svg" className="w-10 mr-2" alt="" />
-                  <span className="text-white text-3xl">Pixfolio</span>
+                <img src="star-1.svg" className="w-10 mr-2" alt="" />
+                <span className="text-white text-3xl font-bold">Pixfolio</span>
               </a>
             </div>
 
@@ -28,7 +28,7 @@ const Header = () => {
                       className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
                       href="#"
                     >
-                     ABOUT ME
+                      ABOUT ME
                     </a>
                   </li>
 
@@ -66,10 +66,14 @@ const Header = () => {
               <div className="sm:flex sm:gap-4">
                 <div className="hidden sm:flex">
                   <a
-                    className="rounded-md bg-orange-50 px-5 py-2.5 text-xl font-medium dark:text-logoColor dark:hover:text-white/75"
+                    className="group relative inline-block overflow-hidden rounded bg-orange-50 px-8 py-3 focus:outline-none focus:ring"
                     href="#"
                   >
-                    Download CV
+                    <span className="absolute inset-y-0 left-0 w-[2px] bg-logoColor transition-all group-hover:w-full group-active:bg-logoColor"></span>
+
+                    <span className="relative text-lg font-medium text-logoColor transition-colors group-hover:text-white">
+                      DOWNLOAD CV
+                    </span>
                   </a>
                 </div>
               </div>
@@ -96,7 +100,6 @@ const Header = () => {
           </div>
         </div>
       </header>
-      ;
     </>
   );
 };
